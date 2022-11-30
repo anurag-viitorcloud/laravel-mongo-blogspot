@@ -1,4 +1,4 @@
-@extends('backend.layouts.login')
+@extends('frontend.layouts.login')
 @section('content')
 <div class="d-flex flex-column flex-root">
     <!--begin::Login-->
@@ -15,7 +15,7 @@
                 <!--begin::Login Sign in form-->
                 <div class="verify-email">
                     <div class="mb-10">
-                        <h3 class="font-weight-bold">Verify E-mail</h3>
+                        <h3 class="font-weight-bold">{{ __('Verify E-mail') }}</h3>
                         <p class="opacity-60 font-weight-bold text-dark-100">
                             {{ __('Thanks for signing up! Before getting started, Please verify your email address by clicking on the link, you have received in the email. If you didn\'t receive the email, Click the button below.') }}
                         </p>

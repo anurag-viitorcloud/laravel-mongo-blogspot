@@ -41,7 +41,7 @@ class BlogFactory extends Factory
             'title' => $this->faker->sentence,
             'description' => $this->faker->paragraph,
             'post' => $post,
-            'created_by' => rand(0, 6),
+            'created_by' => rand(1, 5),
             'status' => Constant::STATUS_ONE,
         ];
     }
