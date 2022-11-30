@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Frontend\Dashboard;
 use App\Http\Controllers\Controller;
 use App\Repositories\Frontend\Dashboard\DashboardRepository;
 use Exception;
-use Illuminate\Contracts\Support\Renderable;
+use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Log;
 
 class DashboardController extends Controller
@@ -22,14 +23,14 @@ class DashboardController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Renderable
+     * @return View|RedirectResponse
      */
-    public function index()
+    public function index(): View|RedirectResponse
     {
         try {
             $blogs = $this->dashboardRepository->getBlogCounts();
 
-            return view('backend.dashboard.index', compact('blogs'));
+            return view('frontend.dashboard.index', compact('blogs'));
         } catch (Exception $ex) {
             Log::error($ex);
 

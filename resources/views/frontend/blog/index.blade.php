@@ -1,4 +1,4 @@
-@extends('backend.layouts.app')
+@extends('frontend.layouts.app')
 
 @section('title', __('blog.list'))
 
@@ -47,25 +47,11 @@
                         <div class="mb-7">
                             <form action="{{ route('blogs.index') }}" method="get">
                                 @if(request()->perPage)
-                                <input type="hidden" name="perPage" value="{{ request()->perPage }}">
+                                    <input type="hidden" name="perPage" value="{{ request()->perPage }}">
                                 @endif
                                 <div class="row align-items-center justify-content-end">
                                     <div class="col-lg-12 col-xl-12">
                                         <div class="row align-items-center justify-content-end">
-                                            <!-- Update status dropdown -->
-                                            <div class="multiple-actions col-md-8" id="checkboxActionDropdown" style="display:none;">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="dropdown col-xxl-3 col-lg-4">
-                                                        <select class="form-control form-select status_update" id="kt_select2_1" data-placeholder="{{__('label.update_status')}}">
-                                                            <option value="" selected disabled>{{__('label.update_status')}}</option>
-                                                            <option value="1">{{__('user.active')}}</option>
-                                                            <option value="0">{{__('user.inactive')}}</option>
-                                                        </select>
-                                                    </div>
-                                                    <!-- Delete all button -->
-                                                    <a href="#delete_modal" data-toggle="modal" data-target="#delete_modal" class="btn btn-sm btn-danger mr-2 action-type delete-all" id="delete_all" data-value="delete">{{__('label.button.delete_all')}}</a>
-                                                </div>
-                                            </div>
                                             <div class="col-md-4 my-2 my-md-0 d-flex justify-content-end">
                                                 <div class="input-icon mr-2">
                                                     <input type="text" class="form-control" placeholder="{{ __('blog.search') }}..." name="search" value="{{ request()->search }}" id="search" />
