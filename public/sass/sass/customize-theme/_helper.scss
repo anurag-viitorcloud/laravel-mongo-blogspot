@@ -1,0 +1,54 @@
+@media screen and (max-width: 767px) {
+    /* -----For card----- */
+    .card {
+        .card-body {
+            padding: 1.5rem;
+        }
+        &.card-custom {
+            .card-body {
+                padding: 1.5rem;
+            }
+        }
+    }
+    .card-header,
+    .card-footer {
+        padding: 1.5rem;
+    }
+
+    /* -----For form----- */
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+}
+
+.accordion {
+    .card {
+        .card-header,
+        .card-footer {
+            padding: 1rem 1.25rem;
+        }
+    }
+}
+.custom-tab {
+    ul.nav {
+        background: #eef0f8;
+        border-radius: 0.42rem;
+        li {
+            &.nav-item {
+                margin: 0;
+            }            
+            .nav-link {
+                color: #80808f;
+            }
+        }
+    }    
+}
+
+.custom-tab-content {
+    padding: 1.5rem;
+    background: #ffffff;
+    border: 1px solid #E5EAEE;
+    border-radius: 0 0 0.42rem 0.42rem;
+    margin-top: -0.42rem;
+}

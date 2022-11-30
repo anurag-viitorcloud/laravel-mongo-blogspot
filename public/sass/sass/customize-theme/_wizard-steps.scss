@@ -1,0 +1,211 @@
+@import "../sass/pages/wizard/wizard-1.scss";
+
+.wizard-step {
+    .wizard-label {
+        .num {
+            background: #fafafa;
+            border: 1px solid #ccc;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            margin: 0px auto;
+            font-size: 18px;
+            position: relative;
+            &::after {
+                content: "";
+                border-bottom: 2px solid #ccc;
+                position: absolute;
+                height: 40px;
+                width: 180px;
+                left: 38px;
+                top: -50%;
+            }
+        }
+    }
+    &:last-child {
+        .wizard-label {
+            .num {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.dropzone.dropzone-default {
+    .dz-remove {
+        font-size: 14px;
+    }
+}
+.landing-checkbox-list {
+    overflow-y: scroll;
+    max-height: 320px;
+}
+.order-custom-list {
+    i {
+        height: 38px;
+        width: 38px;
+    }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+    .wizard-step {
+        .wizard-label {
+            .num {
+                &::after {
+                    width: 110px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .wizard-step {
+        .wizard-label {
+            .num {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .wizard.wizard-1 {
+        .wizard-nav {
+            .wizard-steps {
+                .wizard-step {
+                    .wizard-label {
+                        .wizard-title {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----- Wizard step CSS end -----*/
+
+/*----- Wizard step-1 CSS start -----*/
+
+.customer-detail {
+    padding: 15px;
+    background: #f3f6f9;
+    border: 1px solid #ecf0f3;
+    border-radius: 6px;  
+    flex-wrap: wrap; 
+    .detail-box {
+        min-width: 25%;
+        margin: 7px 0;
+        @media screen and (max-width: 1199px) {
+            min-width: 50%;
+        }
+        @media screen and (max-width: 567px) {
+            min-width: 100%;
+        }
+    } 
+}
+.billing-details {
+    table {
+        background: #ffffff;
+        border-radius: 6px;
+        overflow: hidden;
+        tbody {
+            tr {
+                &:nth-of-type(odd) {
+                    background: #ffffff;
+                }
+            }
+            td {
+                font-weight: 600;
+            }
+        }
+    }
+}
+.material-details {
+    margin-top: 30px;
+    padding: 27px 20px;
+    @media screen and (max-width: 767px) {
+        padding: 15px;
+    }
+    .material-tabs {
+        & ~ .material-tabs {
+            border-top: 1px #ecf0f3 solid;
+            padding-top: 25px;
+        }
+        .material-lbl {
+            padding: 3px 10px;
+            background: #3699ff;
+            border-radius: 30px;
+            color: #ffffff;
+        }
+        .tab-content {
+            .checkbox-outer {
+                min-height: 40px;
+                .select2-container {
+                    margin-left: 15px;
+                }
+                @media screen and (max-width: 479px) {
+                    flex-direction: column;
+                    min-height: auto;
+                    .select2-container {
+                        margin: 10px 0 0;
+                    }
+                }
+            }
+            .add-details {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+.close-icon {
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+}
+.promo-code-btn {
+    position: absolute;
+    right: 0;
+    border-radius: 0 0.42rem 0.42rem 0;
+    width: 90px;
+}
+/*----- Wizard step-4 CSS start -----*/
+
+.thankyou-content {
+    i {
+        background: #3699ff;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        border-radius: 100%;
+        font-size: 46px;
+        margin-bottom: 20px;
+    }
+}
+.use-prmocode {
+    .promo-field {
+        min-width: 50%;
+        @media screen and (max-width: 767px) {
+            min-width: 100%;
+        }
+        @media screen and (max-width: 479px) {
+            flex-direction: column;
+            button {
+                display: block;
+                position: static;
+                margin-top: 5px;
+                width: 100%;
+                border-radius: 6px;
+            }
+        }
+    }
+}
