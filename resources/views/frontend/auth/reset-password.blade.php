@@ -1,4 +1,4 @@
-@extends('backend.layouts.login')
+@extends('frontend.layouts.login')
 
 @section('content')
 <div class="d-flex flex-column flex-root">

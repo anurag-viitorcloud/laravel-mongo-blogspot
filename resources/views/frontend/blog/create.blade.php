@@ -1,4 +1,4 @@
-@extends('backend.layouts.app')
+@extends('frontend.layouts.app')
 
 @section('title', __('blog.view'))
 
@@ -69,19 +69,19 @@
                                             </section>
                                             <div id="page" contenteditable="true">
                                                 <div class="title">
-                                                    <b>Add Title Here</b>
+                                                    <b>{{ __('blog.label.default_title') }}</b>
                                                 </div>
                                                 <div class="bg-transparent border-bottom border-primary fw-bold mt-2 mb-2 description">
-                                                    <i>Add description here</i>
+                                                    <i>{{ __('blog.label.default_description') }}</i>
                                                 </div>
                                                 <div id="post">
-                                                    <p id="page-content">Write your blog here</p>
+                                                    <p id="page-content">{{ __('blog.label.default_content') }}</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <button class="log-out-client save" type="button">
                                             <i class="fa fa-save"></i>
-                                            <span>Save content</span>
+                                            <span>{{ __('buttons.save_content') }}</span>
                                         </button>
                                     </div>
                                 </div>

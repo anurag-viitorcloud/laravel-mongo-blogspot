@@ -9,8 +9,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\RedirectResponse;
-use App\Http\Requests\Backend\User\StoreRequest;
-use App\Http\Requests\Backend\User\UpdateRequest;
 use App\Repositories\Frontend\Blog\BlogRepository;
 
 class BlogController extends Controller
@@ -56,9 +54,9 @@ class BlogController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  StoreRequest  $request
+     * @param Request  $request
      */
-    public function store(StoreRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -87,10 +85,10 @@ class BlogController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  UpdateRequest  $request
+     * @param  Request  $request
      * @param  int  $id
      */
-    public function update(UpdateRequest $request, int $id)
+    public function update(Request $request, int $id)
     {
         //
     }
