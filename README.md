@@ -1,8 +1,8 @@
-# laravel-demo
+# laravel-mongo-blogspot
 
 ### Introduction
 
-It is a laravel demo made with Laravel 9 & MongoDB.
+It is a blog manager tool made with Laravel 9 & MongoDB.
 
 ### Installation
 

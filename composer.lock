@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b29952310943586e735b9c90933ce5e",
+    "content-hash": "39acd0ba8b72271331a8197054eb0e03",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -1180,16 +1180,16 @@
         },
         {
             "name": "jenssegers/mongodb",
-            "version": "v3.9.2",
+            "version": "v3.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jenssegers/laravel-mongodb.git",
-                "reference": "61cc6ed41b9b436f83be53089e5b485faafe46fc"
+                "reference": "6ce35ace85a5946f943d7f493f93aebb9a6d129d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jenssegers/laravel-mongodb/zipball/61cc6ed41b9b436f83be53089e5b485faafe46fc",
-                "reference": "61cc6ed41b9b436f83be53089e5b485faafe46fc",
+                "url": "https://api.github.com/repos/jenssegers/laravel-mongodb/zipball/6ce35ace85a5946f943d7f493f93aebb9a6d129d",
+                "reference": "6ce35ace85a5946f943d7f493f93aebb9a6d129d",
                 "shasum": ""
             },
             "require": {
@@ -1246,7 +1246,7 @@
             ],
             "support": {
                 "issues": "https://github.com/jenssegers/laravel-mongodb/issues",
-                "source": "https://github.com/jenssegers/laravel-mongodb/tree/v3.9.2"
+                "source": "https://github.com/jenssegers/laravel-mongodb/tree/v3.9.5"
             },
             "funding": [
                 {
@@ -1258,7 +1258,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-01T13:20:31+00:00"
+            "time": "2023-02-16T12:20:36+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2048,22 +2048,22 @@
         },
         {
             "name": "mongodb/mongodb",
-            "version": "1.12.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mongodb/mongo-php-library.git",
-                "reference": "e4a7594ac4b31635fa77455c4038a7013024ba28"
+                "reference": "3a681a3b2f2c0ebac227a3b86bb9057d0e6eb8f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/e4a7594ac4b31635fa77455c4038a7013024ba28",
-                "reference": "e4a7594ac4b31635fa77455c4038a7013024ba28",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/3a681a3b2f2c0ebac227a3b86bb9057d0e6eb8f8",
+                "reference": "3a681a3b2f2c0ebac227a3b86bb9057d0e6eb8f8",
                 "shasum": ""
             },
             "require": {
                 "ext-hash": "*",
                 "ext-json": "*",
-                "ext-mongodb": "^1.13.0",
+                "ext-mongodb": "^1.15.0",
                 "jean85/pretty-package-versions": "^1.2 || ^2.0.1",
                 "php": "^7.2 || ^8.0",
                 "symfony/polyfill-php80": "^1.19"
@@ -2071,12 +2071,13 @@
             "require-dev": {
                 "doctrine/coding-standard": "^9.0",
                 "squizlabs/php_codesniffer": "^3.6",
-                "symfony/phpunit-bridge": "^5.2"
+                "symfony/phpunit-bridge": "^5.2",
+                "vimeo/psalm": "^4.28"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12.x-dev"
+                    "dev-master": "1.15.x-dev"
                 }
             },
             "autoload": {
@@ -2111,9 +2112,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mongodb/mongo-php-library/issues",
-                "source": "https://github.com/mongodb/mongo-php-library/tree/1.12.0"
+                "source": "https://github.com/mongodb/mongo-php-library/tree/1.15.0"
             },
-            "time": "2022-03-23T20:18:39+00:00"
+            "time": "2022-11-23T04:45:35+00:00"
         },
         {
             "name": "monolog/monolog",
